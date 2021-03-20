@@ -6,6 +6,7 @@
 
 body {
     background-color: #1C1E26;
+    height: 2000px;
 }
 
 .test {
@@ -103,6 +104,27 @@ body {
 
 .game .panel {
     background-color: #454C68;
+}
+
+.game .other, .title {
+    padding: 0px 10px 0px 10px;
+    color: white;
+}
+
+.game .other {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.game .other a {
+    color: white;
+    transition: color .2s;
+}
+
+.game .other a:hover {
+    color: #808080;
+    transition: color .2s;
 }
 
 .game .title > h5{
