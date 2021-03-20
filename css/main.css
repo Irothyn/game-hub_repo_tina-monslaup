@@ -23,7 +23,6 @@ body {
 
 .container-content {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     margin-left: 50px;
     margin-right: 50px;
@@ -38,7 +37,7 @@ body {
 }
 
 .col {
-    flex-direction: row; 
+    flex-direction: row;
 }
 
 /* Navbar */
@@ -107,6 +106,11 @@ body {
     padding: 0px;
 }
 
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
 .game {
     padding: 20px;
 }
@@ -158,7 +162,46 @@ h3 .title {
 /* Viewports */
 
 @media (max-width: 575px) {
-    .container {
+    #searchbar {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    #searchbar .search {
+        color: black;
+        background-color: white;
+        margin-left: -30px;
+        transition: color .2s;
+    }
+    
+    #searchbar .search:hover {
+        color: #808080;
+        transition: color .2s;
+    }
+    
+    #searchbar input {
+        background-color: white;
+        font-size: 16px;
+        color: #d3d3d3;
+        padding: 10px;
+        border: none;
+        width: 220px;
+        border-radius: 10px;
+    }
+    .col {
+        flex: 100%;
+    }
+    #navbar .items {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    #navbar .nav {
+        display: flex;
+        text-align: center;
         flex-direction: column;
     }
 }
