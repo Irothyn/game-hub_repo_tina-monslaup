@@ -16,14 +16,20 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: row;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 .col {
-    flex-direction: column;
+    flex-direction: row; 
 }
 
 /* Navbar */
@@ -83,6 +89,26 @@ body {
     border: none;
     width: 800px;
     border-radius: 10px;
+}
+
+/* Game Section */
+
+.image {
+    padding: 0px;
+}
+
+.game {
+    padding: 50px;
+}
+
+.game .panel {
+    background-color: #454C68;
+}
+
+.game .title > h5{
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
 }
 
 /* Viewports */
