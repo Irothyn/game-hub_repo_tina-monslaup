@@ -94,7 +94,7 @@ a {
 #searchbar input {
     background-color: white;
     font-size: 16px;
-    color: #d3d3d3;
+    color: black;
     padding: 10px;
     border: none;
     width: 700px;
@@ -162,25 +162,6 @@ h3 .title {
 
 /* Viewports */
 
-@media (max-width: 575px) {
-    .container {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    #searchbar input {
-        width: 220px;
-    }
-
-    #navbar .items {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-top: 10px;
-    }
-}
-
 @media (max-width: 1399px) {
 
 }
@@ -224,6 +205,25 @@ h3 .title {
 }
 
 @media (max-width: 767px) {
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #searchbar input {
+        width: 220px;
+    }
+
+    #navbar .items {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 575px) {
     .container {
         display: flex;
         align-items: center;
