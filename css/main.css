@@ -27,6 +27,7 @@ a {
 
 .container-content {
     display: flex;
+    height: 100%;
     flex-wrap: wrap;
     margin-left: 50px;
     margin-right: 50px;
@@ -159,6 +160,29 @@ h3 .title {
     font-weight: 300;
     font-size: 30px;
 }
+
+/* Account Page */
+
+.account {
+    padding: 20px;
+}
+
+.account .panel {
+}
+
+.account .title {
+    padding: 0px;
+    font-size: 40px;
+}
+
+.account .info {
+    color: white;
+}
+
+.account .nav a {
+    display: block;
+}
+
 
 /* Viewports */
 
