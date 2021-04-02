@@ -22,11 +22,6 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-content: flex-start;
-}
-
-.fb-item {
-    width: 500px;
 }
 
 /* Navbar */
@@ -102,6 +97,12 @@ a {
     font-weight: 300;
 }
 
+.playbox p {
+    font-size: 20px;
+    margin-top: 50px;
+    font-weight: 300;
+}
+
 #accNav a {
     display: block;
     color: white;
@@ -113,11 +114,67 @@ a {
     color: white;
 }
 
+#accInfo, #accSell, #accHistory {
+    width: 600px;
+}
+
+#accNav {
+    width: 300px;
+}
+
 #accNav, #accInfo {
     height: 500px;
 }
 #accSell, #accHistory {
     height: 200px;
+}
+
+/* Create Account / Login Page */
+
+#caLogin, #caRegister {
+    width: 45%;
+    color: white;
+}
+
+#caLogin h2, #caRegister h2 {
+    font-weight: 200;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#caLogin form input, #caRegister form input {
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    border-bottom: 2px white solid;
+}
+
+#caLogin ::placeholder, #caRegister ::placeholder {
+    color: white;
+    font-size: 17px;
+}
+
+#caLogin .button, #caRegister .button {
+    position: relative;
+}
+
+.submitButton {
+    padding: 5px;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    width: 120px;
+    background-color: #1C1E26;
+    text-align: center;
+    color: white;
+    border-radius: 2px;
+}
+
+#caLogin .panel, #caRegister .panel {
+    background-color: #454C68;
+    padding: 50px;
+    border-radius: 20px;
+    height: 70%;
 }
 
 /* Viewports */
