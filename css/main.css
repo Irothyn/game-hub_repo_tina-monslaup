@@ -35,16 +35,29 @@ a {
     grid-gap: 40px;
 }
 
+.account .buttons .grid-container {
+    grid-template-columns: auto;
+    grid-gap: 0px;
+    justify-content: end;
+}
+
+.account .buttons .grid-container .grid-item {
+    padding: 13px;
+}
+
 .grid1 {
     grid-template-columns: repeat(1, 1fr);
 }
+
 .grid2 {
     grid-template-columns: repeat(2, 1fr);
 }
+
 .grid3 {
     grid-template-columns: 300px auto auto;
-    grid-auto-rows: 230px;
+    grid-auto-rows: 170px;
 }
+
 .grid4 {
     grid-template-columns: repeat(4, 1fr);
 }
@@ -139,7 +152,8 @@ a {
 }
 
 .account .nav a {
-    padding: 15px;
+    margin: 15px;
+    margin-left: 0px;
 }
 
 .account .nav a:hover {
@@ -147,7 +161,7 @@ a {
     transition: color .2s;
 }
 
-.account .info {
+.account .contactInfo {
     grid-row: span 2;
 }
 
@@ -157,6 +171,40 @@ a {
 
 .account .history {
     grid-column: span 1;
+}
+
+.account .title h5 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.account .info h5 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.account .info p {
+    font-weight: 200;
+}
+
+.account .info span {
+    font-weight: 400;
+}
+
+.account .sell h5, .history h5 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.account .button {
+    padding: 10px 30px 10px 30px;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #1C1E26;
 }
 
 
