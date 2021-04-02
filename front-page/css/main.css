@@ -12,33 +12,46 @@ a {
     text-decoration: none;
 }
 
-.dev {
+.test {
     border: 1px purple solid;
 }
 
-/* Flexbox */
+/* Flex & Container */
 
-.fb-container {
+.container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
 }
 
-.fb-item {
-    width: 500px;
+.container-content {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.col {
+    flex-direction: row;
 }
 
 /* Navbar */
+
 #navbar {
     background-color: #454C68;
     display: flex;
     justify-content: space-around;
     padding: 20px;
-}
-
-#nav {
-    align-items: center;
 }
 
 #navbar a {
@@ -89,36 +102,99 @@ a {
     border-radius: 10px;
 }
 
-/* Account */
+/* Game Section */
 
-.account {
-    padding: 20px 100px 20px 100px;
+.image {
+    padding: 0px;
+}
+
+.image img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.game {
+    padding: 20px;
+}
+
+.game .panel {
+    background-color: #454C68;
+}
+
+.game .other, .title {
+    padding: 0px 10px 0px 10px;
+    color: white;
+}
+
+.game .other {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+h3 .title {
+    margin: 100px;
+}
+
+.game .other a {
+    color: white;
+    transition: color .2s;
+}
+
+.game .other a:hover {
+    color: #808080;
+    transition: color .2s;
+}
+
+.game .title > h5{
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
 }
 
 .playbox {
-    padding-top: 20px;
     color: white;
-    font-size: 30px;
+    padding: 25px;
+    padding-bottom: 0px;
     font-weight: 300;
+    font-size: 30px;
 }
 
-#accNav a {
+/* Account Page */
+
+.account {
+    padding: 20px;
+}
+
+.account .panel {
+    background-color: #454C68;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.account .title {
+    padding: 0px;
+    font-size: 40px;
+}
+
+.account .info {
+    color: white;
+}
+
+.account #accNav, #accInfo {
+    height: 100%;
+}
+
+.account #accSell {
+    align-items: flex-end;
+}
+
+.account .nav a {
     display: block;
     color: white;
-    text-decoration: none;
 }
 
-#accNav, #accInfo, #accSell, #accHistory {
-    padding: 20px;
-    color: white;
-}
-
-#accNav, #accInfo {
-    height: 500px;
-}
-#accSell, #accHistory {
-    height: 200px;
-}
 
 /* Viewports */
 
@@ -127,7 +203,7 @@ a {
 }
 
 @media (max-width: 1199px) {
-    .fb-container {
+    .container {
         display: flex;
         align-items: center;
         flex-direction: row;
@@ -146,7 +222,7 @@ a {
 }
 
 @media (max-width: 991px) {
-    .fb-container {
+    .container {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -165,7 +241,7 @@ a {
 }
 
 @media (max-width: 767px) {
-    .fb-container {
+    .container {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -184,7 +260,7 @@ a {
 }
 
 @media (max-width: 575px) {
-    .fb-container {
+    .container {
         display: flex;
         align-items: center;
         flex-direction: column;
