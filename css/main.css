@@ -16,10 +16,44 @@ a {
     border: 1px purple solid;
 }
 
+/* Flexbox (Navbar) */
+.fb-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 100px 20px 100px;
+}
+
 /* CSS Grids */
 
-.grid-container
+.content {
+    margin: 50px 200px 50px 200px;
+}
 
+.grid-container {
+    display: grid;
+    grid-gap: 40px;
+}
+
+.grid1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+.grid2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid3 {
+    grid-template-columns: 300px auto auto;
+    grid-auto-rows: 230px;
+}
+.grid4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-item {
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
 
 /* Navbar */
 #navbar {
@@ -88,43 +122,43 @@ a {
 /* Account */
 
 .playbox {
-    padding-top: 20px;
     color: white;
     font-size: 30px;
     font-weight: 300;
+    margin-bottom: 20px;
 }
 
-.playbox p {
+.account .nav, .nav a {
+    grid-row: span 2;
+    color: white;
+    display: block;
     font-size: 20px;
-    margin-top: 50px;
+    align-items: center;
+    transition: color .2s;
     font-weight: 300;
 }
 
-#accNav a {
-    display: block;
-    color: white;
-    text-decoration: none;
+.account .nav a {
+    padding: 15px;
 }
 
-#accNav, #accInfo, #accSell, #accHistory {
-    padding: 20px;
-    color: white;
+.account .nav a:hover {
+    color: rgb(182, 182, 182);
+    transition: color .2s;
 }
 
-#accInfo, #accSell, #accHistory {
-    width: 600px;
+.account .info {
+    grid-row: span 2;
 }
 
-#accNav {
-    width: 300px;
+.account .sell {
+    grid-column: span 1;
 }
 
-#accNav, #accInfo {
-    height: 500px;
+.account .history {
+    grid-column: span 1;
 }
-#accSell, #accHistory {
-    height: 200px;
-}
+
 
 /* Create Account / Login Page */
 
