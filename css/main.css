@@ -16,14 +16,10 @@ a {
     border: 1px purple solid;
 }
 
-/* Flexbox */
+/* CSS Grids */
 
-.fb-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 20px 100px 20px 100px;
-}
+.grid-container
+
 
 /* Navbar */
 #navbar {
@@ -35,6 +31,10 @@ a {
 
 #nav {
     align-items: center;
+}
+
+.search input ::placeholder {
+    color: black !important;
 }
 
 #navbar a {
@@ -180,30 +180,39 @@ input {
 .contact textarea {
     border-radius: 20px;
     width: 96%;
+    margin-top: 20px;
     padding: 10px;
-    height: 200px;
+    height: 100px;
     margin-bottom: 20px;
 }
 
-.fb-item .fab {
+.contact textarea::placeholder {
+    color: black;
+    font-size: 17px;
+}
+
+.fb-item .fab, .fas {
     color: #1C1E26;
-    font-size: 50px;
-    margin: auto;
-    width: 100px;
-    height: 100px;
-    background-color: #454C68;
+    font-size: 60px;
+    margin: 10px;
+    background-color: white;
     border-radius: 100%;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
+/* Results */
+
+.results input {
+    width: 100px;
+}
 
 /* Other */
 
 .panel {
     background-color: #454C68;
     border-radius: 20px;
-    padding: 20px;
+    padding: 30px;
 }
 
 /* Viewports */
