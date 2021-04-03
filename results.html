@@ -13,33 +13,73 @@
 <body>
 
     <nav id="navbar">
-        <div class="fb-container justify-around" id="nav">
-            <a href="index.html" class="brand">
-                <img src="./images/GameHub_Logo.png" width="150px">
-            </a>
-            <div id="searchbar">
-                <input type="text" placeholder="What are you looking for?"><a href="#" class="search"><i class="fa fa-search"></i></a>
+        <div class="grid-container grid3 navbar" id="nav">
+            <div class="grid-item">
+                <a href="index.html" class="brand">
+                    <img src="./images/GameHub_Logo.png" width="150px">
+                </a>
             </div>
-            <div class="items">
-                <a href="createaccount.html" class="item">Log in</a>
-                <a href="contact.html" class="item">Contact</a>
-                <a href="#" class="item"><i class="fa fa-heart"></i></a>
-                <a href="checkout.html" class="item"><i class="fa fa-shopping-cart"></i></a>
+            <div class="grid-item">    
+                <div id="searchbar">
+                    <input type="text" placeholder="What are you looking for?"><a href="results.html" class="search"><i class="fa fa-search"></i></a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="items">
+                    <a href="createaccount.html" class="item">Log in</a>
+                    <a href="contact.html" class="item">Contact</a>
+                    <a href="#" class="item"><i class="fa fa-heart"></i></a>
+                    <a href="checkout.html" class="item"><i class="fa fa-shopping-cart"></i></a>
+                </div>
             </div>
         </div>
     </nav>
-    
-    <section class="content">
-        <div class="grid-container grid2 dev results">
-            <div class="grid-items playbox">
-                <h3 class="playbox">Results</h3>
-            </div>
-            <div class="grid-items searchbar" id="searchbar">
-                <input type="text" placeholder="What are you looking for?"><a href="#" class="search"><i class="fa fa-search"></i></a>
-            </div>
-        </div>
-        <div class="grid-container grid3 results">
 
+
+    <section class="content" id="results">
+        <div class="grid-container grid2">
+            <div class="grid-item title">
+                <h3>Search results</h3>
+            </div>
+            <div class="grid-item" id="searchbar">
+                <input type="text" placeholder="What are you looking for?"><a href="results.html" class="search"><i class="fa fa-search"></i></a>
+            </div>
+            <div class="grid-item"></div>
+            <div class="grid-item relevance">
+                <a href="#" class="button">Relevance</a>
+            </div>
+            <div class="grid-item platform">
+                <a href="#" class="button">Platform</a>
+            </div>
+            <div class="grid-item price">
+                <a href="#" class="button">Price</a>
+            </div>
+            <div class="grid-item genre">
+                <a href="#" class="button">Genre</a>
+            </div>
+            <div class="grid-item"></div>
+        </div>
+        <div class="grid-container grid2">
+            <div class="grid-item game">
+                <div class="panel">
+                    <div class="image">
+                        <img src="./images/GameHub_covers2.jpg">
+                    </div>
+                    <div class="title">
+                        <h5>Super Duper</h5>
+                    </div>
+                    <div class="other">
+                        <div class="price">
+                            <p>NOK 350</p>
+                        </div>
+                        <div class="space"></div>
+                        <div class="actions">
+                            <a href="#"><i class="fa fa-heart"></i></a>
+                            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     

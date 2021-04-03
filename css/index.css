@@ -161,41 +161,6 @@ h3 .title {
     font-size: 30px;
 }
 
-/* Account Page */
-
-.account {
-    padding: 20px;
-}
-
-.account .panel {
-    background-color: #454C68;
-    padding: 20px;
-    border-radius: 20px;
-}
-
-.account .title {
-    padding: 0px;
-    font-size: 40px;
-}
-
-.account .info {
-    color: white;
-}
-
-.account #accNav, #accInfo {
-    height: 100%;
-}
-
-.account #accSell {
-    align-items: flex-end;
-}
-
-.account .nav a {
-    display: block;
-    color: white;
-}
-
-
 /* Viewports */
 
 @media (max-width: 1399px) {
