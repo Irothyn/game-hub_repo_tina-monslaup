@@ -202,23 +202,37 @@ a {
 /* Create Account / Login Page */
 
 #createAccount .grid-container {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
 }
 
 #createAccount .grid-item {
-    justify-self: start;
-
+    justify-self: stretch;
 }
 
 #createAccount h3 {
     font-weight: 300;
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 20px;
 }
 
 #createAccount input {
-    width: 300px;
-    padding: 5px;
+    width: 100%;
+}
+
+#createAccount .grid-item .title {
+    grid-column: 1/3;
+}
+
+#createAccount .grid-item .buttons {
+    justify-self: end;
+    grid-column: 2/3;
+}
+
+#createAccount p {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 /* Contact Page */
@@ -261,6 +275,7 @@ a {
 input {
     background-color: transparent;
     border: none;
+    padding: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-bottom: 2px white solid;
@@ -270,7 +285,7 @@ input {
     padding: 10px 30px 10px 30px;
     color: white;
     font-size: 15px;
-    border-radius: 10px;
+    border-radius: 3px;
     background-color: #1C1E26;
 }
 
