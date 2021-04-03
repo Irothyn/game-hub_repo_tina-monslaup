@@ -199,57 +199,26 @@ a {
     font-weight: 300;
 }
 
-.account .button {
-    padding: 10px 30px 10px 30px;
-    color: white;
-    font-size: 15px;
-    border-radius: 10px;
-    background-color: #1C1E26;
-}
-
-
 /* Create Account / Login Page */
 
-#caLogin, #caRegister {
-    width: 45%;
-    color: white;
+#createAccount .grid-container {
+    grid-template-columns: repeat(1, 1fr);
 }
 
-#caLogin h2, #caRegister h2 {
-    font-weight: 200;
+#createAccount .grid-item {
+    justify-self: start;
+
+}
+
+#createAccount h3 {
+    font-weight: 300;
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-input {
-    background-color: transparent;
-    border: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-bottom: 2px white solid;
-}
-
-::placeholder {
-    color: white;
-    font-size: 17px;
-}
-
-#caLogin .button, #caRegister .button {
-    position: relative;
-}
-
-.submitButton {
+#createAccount input {
+    width: 300px;
     padding: 5px;
-    width: 200px;
-    background-color: #1C1E26;
-    text-align: center;
-    color: white;
-    border-radius: 2px;
-}
-
-#caLogin .panel, #caRegister .panel {
-    height: 70%;
-    padding: 50px;
 }
 
 /* Contact Page */
@@ -269,7 +238,7 @@ input {
 }
 
 .contact textarea::placeholder {
-    color: black;
+    color: black !important;
     font-size: 17px;
 }
 
@@ -288,6 +257,27 @@ input {
 
 
 /* Other */
+
+input {
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px white solid;
+}
+
+.button {
+    padding: 10px 30px 10px 30px;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #1C1E26;
+}
+
+::placeholder {
+    color: white;
+    font-size: 17px;
+}
 
 .panel {
     background-color: #454C68;
