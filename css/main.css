@@ -12,6 +12,11 @@ a {
     text-decoration: none;
 }
 
+.grid-test {
+    background-color: teal;
+    border: 2px turquoise solid;
+}
+
 .dev {
     border: 1px purple solid;
 }
@@ -98,7 +103,6 @@ a {
     margin: 0px 10px 0px 10px;
 }
 
-
 /* Searchbar */
 
 #searchbar {
@@ -175,24 +179,24 @@ a {
     grid-column: span 1;
 }
 
-.account .title h5 {
+.account .title h5, #checkoutSuccess .title h5 {
     font-size: 40px;
     font-weight: 300;
     margin-bottom: 30px;
 }
 
-.account .info h5 {
+.account .info h5, #checkoutSuccess .info h5 {
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 200;
     margin-bottom: 20px;
 }
 
-.account .info p {
+.account .info p, #checkoutSuccess .info p {
     font-weight: 200;
 }
 
-.account .info span {
+.account .info span, #checkoutSuccess .info span {
     font-weight: 400;
 }
 
@@ -309,6 +313,153 @@ a {
 #results .title h3 {
     font-weight: 300;
     font-size: 26px;
+}
+
+#results .panel {
+    padding: 0px;
+    border-radius: 0px;
+}
+
+#results .image {
+    padding: 0px;
+}
+
+#results .image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#results .game {
+    padding: 20px;
+}
+
+#results .game .panel {
+    background-color: #454C68;
+}
+
+#results .game .other, .title {
+    padding: 0px 10px 0px 10px;
+    color: white;
+}
+
+#results .game .other {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+#results h3 .title {
+    margin: 100px;
+}
+
+#results .game .other a {
+    color: white;
+    transition: color .2s;
+}
+
+#results .game .other a:hover {
+    color: #808080;
+    transition: color .2s;
+}
+
+#results .game .title > h5{
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+/* Checkout */
+
+#checkout .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 20px;
+}
+
+#checkout .panel {
+    grid-column: 1/5;
+}
+
+#checkout .product {
+    justify-self: start;
+    align-self: center;
+}
+#checkout .platform {
+    justify-self: center;
+    align-self: center;
+}
+#checkout .quantity {
+    justify-self: center;
+    align-self: center;    
+}
+#checkout .subtotal {
+    justify-self: end;
+    align-self: center;
+}
+
+#checkout .subtotal, .platform, .product, .quantity {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#checkout .button {
+    background-color: #454C68;
+    border-radius: 15px;
+}
+
+#checkout .image img {
+    width: 200px;
+}
+
+#checkout h3 {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+#checkout .total {
+    background-color: #454C68;
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+    grid-column: 4/5;
+    text-transform: uppercase;
+}
+
+#checkout .total a {
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: none;
+}
+
+/* Checkout Successful */
+
+#checkout #checkoutSuccess.grid-container {
+    grid-template-columns: repeat(7, 1fr);
+}
+
+#checkout #checkoutSuccess .nav {
+    grid-column: auto;
+}
+
+#checkout #checkoutSuccess .panel {
+    grid-column: 1/5;
+}
+
+#checkout #checkoutSuccess .thankyou {
+    grid-row: 1/3;
+    grid-column: 5/8;
+}
+
+#checkout #checkoutSuccess .thankyou .button {
+    background-color: #1C1E26;
+}
+
+#checkout #checkoutSuccess .thankyou .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 150px;
 }
 
 /* Other */
