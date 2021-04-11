@@ -40,13 +40,13 @@ a {
     grid-gap: 40px;
 }
 
-.account .buttons .grid-container {
+#account .buttons .grid-container {
     grid-template-columns: auto;
     grid-gap: 0px;
     justify-content: end;
 }
 
-.account .buttons .grid-container .grid-item {
+#account .buttons .grid-container .grid-item {
     padding: 13px;
 }
 
@@ -147,7 +147,7 @@ a {
     margin-bottom: 20px;
 }
 
-.account .nav, .nav a {
+#account .nav, .nav a {
     grid-row: span 2;
     color: white;
     display: block;
@@ -157,50 +157,50 @@ a {
     font-weight: 300;
 }
 
-.account .nav a {
+#account .nav a {
     margin: 15px;
     margin-left: 0px;
 }
 
-.account .nav a:hover {
+#account .nav a:hover {
     color: rgb(182, 182, 182);
     transition: color .2s;
 }
 
-.account .contactInfo {
+#account .contactInfo {
     grid-row: span 2;
 }
 
-.account .sell {
+#account .sell {
     grid-column: span 1;
 }
 
-.account .history {
+#account .history {
     grid-column: span 1;
 }
 
-.account .title h5, #checkoutSuccess .title h5 {
+#account .title h5, #checkoutSuccess .title h5 {
     font-size: 40px;
     font-weight: 300;
     margin-bottom: 30px;
 }
 
-.account .info h5, #checkoutSuccess .info h5 {
+#account .info h5, #checkoutSuccess .info h5 {
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 200;
     margin-bottom: 20px;
 }
 
-.account .info p, #checkoutSuccess .info p {
+#account .info p, #checkoutSuccess .info p {
     font-weight: 200;
 }
 
-.account .info span, #checkoutSuccess .info span {
+#account .info span, #checkoutSuccess .info span {
     font-weight: 400;
 }
 
-.account .sell h5, .history h5 {
+#account .sell h5, .history h5 {
     font-size: 30px;
     font-weight: 300;
 }
@@ -495,7 +495,30 @@ input {
 /* Viewports */
 
 @media (max-width: 1399px) {
-
+    #searchbar input {
+        width: 300px;
+    }
+    .content {
+        margin: 50px;
+    }
+    #account .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+        grid-auto-rows: auto;
+    }
+    #account .buttons .grid-container {
+        grid-template-columns: repeat(1, 2fr);
+        align-self: center;
+    }
+    #checkout .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 50px;
+        grid-auto-rows: auto;
+    }
+    #checkout .buttons .grid-container {
+        grid-template-columns: repeat(1, 2fr);
+        align-self: center;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -514,6 +537,24 @@ input {
         flex-direction: row;
         text-align: center;
         margin-top: 10px;
+    }
+    .content {
+        margin: 50px;
+    }
+    #account .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+        grid-auto-rows: auto;
+    }
+    #account .buttons .grid-container {
+        grid-template-columns: repeat(1, 2fr);
+        align-self: center;
+    }
+    #checkout img {
+        width: 100px !important;
+    }
+    #checkout .grid-container > #checkoutSuccess {
+        grid-auto-rows: auto;
     }
 }
 
@@ -534,6 +575,19 @@ input {
         text-align: center;
         margin-top: 10px;
     }
+    .content {
+        margin: 50px;
+    }
+    /* Account */
+    #account .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        grid-auto-rows: auto;
+    }
+    #account .buttons .grid-container {
+        grid-template-columns: repeat(1, 2fr);
+        align-self: center;
+    }
 }
 
 @media (max-width: 767px) {
@@ -553,6 +607,9 @@ input {
         text-align: center;
         margin-top: 10px;
     }
+    .content {
+        margin: 50px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -571,5 +628,8 @@ input {
         flex-direction: column;
         text-align: center;
         margin-top: 10px;
+    }
+    .content {
+        margin: 10px;
     }
 }
